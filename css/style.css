@@ -3,15 +3,6 @@ body {
   color:green;
   text-align:center;
 }
-.column {
-  float: left;
-  width: 20%;
-  margin: 1.25%;
-  padding: .5%;
-  border-color: black;
-  border-width: 1.25%;
-  border-style: dashed;
-}
 .column p a {
   color: salmon;
 }
@@ -22,4 +13,24 @@ body {
 .column h3{
   color: red;
   font-style: italic;
+}
+@media screen and (min-width: 768px) {
+  .column {
+    float: left;
+    width: 20%;
+    margin: 1.25%;
+    padding: .5%;
+    border-color: black;
+    border-width: 1.25%;
+    border-style: dashed;
+  }
+}
+@media screen and (max-width: 767px) {
+  .column {
+    margin-top: 1.25%;
+    padding: .5%;
+    border-color: black;
+    border-width: 1.25%;
+    border-style: dashed;
+  }
 }
